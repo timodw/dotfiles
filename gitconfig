@@ -1,0 +1,19 @@
+[user]
+  name = Timo De Waele
+  email = timo.dewaele@UGent.be
+[color]
+  ui = true
+[core]
+	editor = /usr/bin/vim
+  excludesfile = /Users/timodewaele/.gitignore_global
+[alias]
+  co = checkout
+  unstage = reset HEAD --
+[push]
+  default = current
+[help]
+  autocorrect = 1
+[github]
+  user = timodw
+[hub]
+  host = github.ugent.be
