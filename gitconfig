@@ -1,6 +1,6 @@
 [user]
   name = Timo De Waele
-  email = timo.dewaele@UGent.be
+  email = timo.dewaele@gmail.com
 [color]
   ui = true
 [core]
@@ -15,5 +15,3 @@
   autocorrect = 1
 [github]
   user = timodw
-[hub]
-  host = github.ugent.be

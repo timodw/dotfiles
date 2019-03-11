@@ -16,6 +16,7 @@ Plug 'sebastianmarkow/deoplete-rust'
 Plug 'zchee/deoplete-clang'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'bfrg/vim-cpp-modern'
 
 " Initialize plugin system
 call plug#end()
@@ -36,6 +37,11 @@ set autoread " auto reload file on change
 set scrolloff=8
 set cursorline
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Undo
 set undofile
 set undoreload=10000
@@ -47,9 +53,9 @@ colorscheme gruvbox
 
 " Wrapping stuff
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set list
 set listchars=tab:\ \ ,trail:·
@@ -78,5 +84,5 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#rust#racer_binary = '/Users/timodewaele/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path = '/Users/timodewaele/Developer/rust'
 let g:deoplete#sources#rust#documentation_max_height=20
-let g:deoplete#sources#clang#libclang_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header = '/usr/local/opt/llvm/lib/clang/7.0.0/include'
+let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/7.0.0/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/7.0.0/include/'
