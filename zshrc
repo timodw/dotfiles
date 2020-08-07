@@ -18,3 +18,6 @@ alias pause="spotify pause"
 alias next="spotify next"
 alias prev="spotify prev"
 alias bob="make"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
